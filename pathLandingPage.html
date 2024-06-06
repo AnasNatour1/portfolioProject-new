@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Set up the background and its overlay */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        .background img {
+            width: 100vw;
+            height: 643px;
+
+        }
+
+        .contact-form-container {
+            top: 157px;
+            left: 1056px;
+            width: 569px;
+            height: 643px;
+            background: #1A1A1AD4 0% 0% no-repeat padding-box;
+            opacity: 0.9;
+            padding: 20px;
+            top: 157px;
+            left: 1700px;
+            position: absolute
+        }
+
+        .contact-form {
+            /* Slightly lighter background color for the form */
+            padding: 20px;
+            border-radius: 8px;
+            width: 400px;
+            /* Adjust the width as needed */
+            color: #fff;
+            margin: 0 auto;
+            gap: 20px;
+            position: absolute
+        }
+
+        .contact-form h2 {
+            text-align: center;
+        }
+
+
+
+        .contact-form input[type="text"] {
+            width: 418px;
+            height: 50px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #D31C75;
+            opacity: 1;
+
+        }
+
+        .contact-form input[type="email"] {
+            width: 418px;
+            height: 50px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #D31C75;
+            opacity: 1;
+        }
+
+        .contact-form input[type="submit"] {
+            width: 166px;
+            height: 50px;
+            /* UI Properties */
+            background: #D31C75 0% 0% no-repeat padding-box;
+            opacity: 1;
+            color: #F9F9F9;
+            font-size: 1.2rem;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #0097a7;
+            /* Button hover color */
+        }
+
+        .h3 {
+            width: 413px;
+            height: 53px;
+            text-align: right;
+            font: normal normal 900 36px/53px Heebo;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+            font-size: 2rem;
+            padding: 30px;
+        }
+
+        p {
+
+            text-align: center;
+            font: normal normal normal 20px/29px Heebo;
+            letter-spacing: 0px;
+            color: #F9F9F9;
+            opacity: 1;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <img src="images/Path 15.png" alt="">
+    </div>
+    <div class="contact-form-container">
+        <h3 class="h3">תן לנו להוביל אותך קדימה </h3>
+        <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול,
+        </p>
+
+        <div class="contact-form">
+
+            <form>
+                <input type="text" name="fullname" placeholder="שם מלא" required>
+                <br><br><br>
+                <input type="email" name="email" placeholder="דוא”ל" required>
+                <br><br><br>
+                <input type="submit" value="שליחה">
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

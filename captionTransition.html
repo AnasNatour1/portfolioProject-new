@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caption Transition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        figure {
+            width: 800px;
+            height: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+
+        }
+
+        figcaption {
+            width: 800px;
+            height: 40px;
+            text-align: center;
+            background-color: rgba(239, 108, 15, 0.716);
+            border: 1px solid crimson;
+            font-size: 2rem;
+            color: #fff;
+            font-family: georgia;
+            opacity: 0;
+            transition: all 0.8s ease-in-out;
+        }
+
+        figure:hover figcaption {
+            transform: translateY(-60px);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <figure>
+        <img src="../fullstack 1/moon.jpeg" alt="moon dance">
+        <figcaption>it's a marvelous night for a moon dance !</figcaption>
+    </figure>
+</body>
+
+</html>
