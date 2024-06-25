@@ -7,7 +7,6 @@
     <title>Contact Form</title>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
     <style>
-        /* Set up the background and its overlay */
         body,
         html {
             margin: 0;
@@ -19,30 +18,28 @@
         }
 
         .background img {
-            width: 100vw;
+            width: 100%;
             height: 643px;
 
         }
 
         .contact-form-container {
             top: 157px;
-            left: 1056px;
             width: 569px;
             height: 643px;
             background: #1A1A1AD4 0% 0% no-repeat padding-box;
             opacity: 0.9;
             padding: 20px;
             top: 157px;
-            left: 1700px;
+            left: 70%;
+            transform: translateX(-30%);
             position: absolute
         }
 
         .contact-form {
-            /* Slightly lighter background color for the form */
             padding: 20px;
             border-radius: 8px;
             width: 400px;
-            /* Adjust the width as needed */
             color: #fff;
             margin: 0 auto;
             gap: 20px;
@@ -75,7 +72,6 @@
         .contact-form input[type="submit"] {
             width: 166px;
             height: 50px;
-            /* UI Properties */
             background: #D31C75 0% 0% no-repeat padding-box;
             opacity: 1;
             color: #F9F9F9;
@@ -84,7 +80,6 @@
 
         .contact-form input[type="submit"]:hover {
             background-color: #0097a7;
-            /* Button hover color */
         }
 
         .h3 {
@@ -108,14 +103,80 @@
             opacity: 1;
 
         }
+        @media (max-width : 810px) {
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: auto;
+
+        
+
+        }
+        .img{
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+
+        }
+        .nth{
+        display: block;
+            color: #F9F9F9;
+            width: 100%;
+            height: 100%;
+margin:0 auto;
+align-content: center;
+
+        }
+ 
+        .contact-form-container {
+              background: #1A1A1AD4 0% 0% no-repeat padding-box;
+              width: 100%;
+              height: 90%;
+        transform: translateY(100px);
+align-content: center;
+margin-bottom: 20px;
+direction: rtl;
+
+        }
+        
+        .contact-form input[type="text"] {
+            width: 100%;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #D31C75;
+opacity: 1;
+line-height: 3;
+
+        }
+
+        .contact-form input[type="email"] {
+            width: 100%;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #D31C75;
+            opacity: 1;
+            line-height: 3;
+        }
+
+        .contact-form input[type="submit"] {
+            width: 166px;
+            height: 50px;
+            background: #D31C75 0% 0% no-repeat padding-box;
+            opacity: 1;
+            color: #F9F9F9;
+            font-size: 1.2rem;
+        }
+        }
     </style>
 </head>
 
 <body>
+    <div class="container">
     <div class="background">
-        <img src="images/Path 15.png" alt="">
+        <img src="images/Path 15.png" alt="" class="img">
     </div>
+    <div class="nth">
     <div class="contact-form-container">
+
         <h3 class="h3">תן לנו להוביל אותך קדימה </h3>
         <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול,
         </p>
@@ -130,9 +191,9 @@
                 <input type="submit" value="שליחה">
             </form>
         </div>
-
+</div>
     </div>
-
+</div>
 </body>
 
 </html>

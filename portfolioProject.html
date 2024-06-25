@@ -4,678 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio Project</title>
+    <title>ראשי</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
-    <style>
-        * {
-
-
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        div {
-            display: grid;
-        }
-
-        #header {
-            /*     top: 1px;
-            left: 1px;
-            height: 120px;
-            padding: 0;
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            opacity: 1;
-            border: 5px solid #1AE0EC;
-            box-shadow: 15px 15px 15px rgb(2, 53, 56)*/
-            top: 1px;
-            left: 1px;
-            width: 100;
-            height: 110px;
-            /* UI Properties */
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            opacity: 1;
-            border: 5px solid #1AE0EC;
-
-        }
-
-        .profimg {
-            width: 98px;
-            height: 96px;
-            display: block;
-            border-radius: 50%;
-
-        }
-
-
-        .anasNatourLogo {
-            top: 25px;
-            left: 379px;
-            width: 250px;
-            height: 40px;
-            opacity: 1;
-            margin-left: 150px;
-            transform: translateY(-60px);
-        }
-
-        nav {
-            /*    top: 1px;
-            left: 1px;
-            width: 1100px;
-            height: 60px;
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            opacity: 1;
-            border: 1px solid #000; */
-            top: 15px;
-            left: 1133px;
-            width: 880px;
-            height: 87px;
-            text-align: center;
-            font: normal normal normal 25px/37px Heebo;
-            letter-spacing: 0px;
-            color: #000000;
-            opacity: 1;
-            margin-left: 900px;
-            transform: translateY(-80px);
-        }
-
-        nav ul {
-            list-style-type: none;
-        }
-
-        nav ul li {
-            float: left;
-
-
-        }
-
-        nav ul li a {
-            display: block;
-            width: 100px;
-            color: #000;
-            text-decoration: none;
-            text-align: center;
-            line-height: 2.2;
-
-        }
-
-        nav ul li a:hover {
-            color: #1AE0EC;
-            font: normal normal bold 25px/37px Heebo;
-
-        }
-
-        nav ul li a:active {
-            color: crimson;
-            font: normal normal bold 25px/37px Heebo;
-
-
-        }
-
-
-        .rashi {
-            top: 25px;
-            left: 1550px;
-            width: 150px;
-            height: 77px;
-            /* UI Properties */
-            text-align: center;
-            font: normal normal normal 25px/37px Heebo;
-            letter-spacing: 0px;
-            color: #2C2C2C;
-            opacity: 1;
-        }
-
-        .about {
-            top: 25px;
-            left: 1429px;
-            width: 150px;
-            height: 77px;
-            /* UI Properties */
-            text-align: center;
-            font: normal normal normal 25px/37px Heebo;
-            letter-spacing: 0px;
-            color: #2C2C2C;
-            opacity: 1;
-        }
-
-        .services {
-            top: 25px;
-            left: 1282px;
-            width: 150px;
-            height: 77px;
-            /* UI Properties */
-            text-align: center;
-            font: normal normal normal 25px/37px Heebo;
-            letter-spacing: 0px;
-            color: #2C2C2C;
-            opacity: 1;
-        }
-
-        .contact {
-            top: 25px;
-            left: 1133px;
-            width: 150px;
-            height: 77px;
-            /* UI Properties */
-            text-align: center;
-            font: normal normal normal 25px/37px Heebo;
-            letter-spacing: 0px;
-            color: #000000;
-            opacity: 1;
-
-        }
-
-        .theme {
-
-            left: 0px;
-            width: 100;
-            height: 461px;
-            /* UI Properties */
-            background: #13eaf198 0% 0% no-repeat padding-box;
-            position: relative;
-
-        }
-
-        .theme::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url(images/zindex.png);
-            z-index: 1;
-            opacity: 0.4;
-            position: absolute;
-            background-repeat: inherit;
-            background-size: cover;
-
-        }
-
-
-
-
-        .tikAvodot {
-
-            top: 700px;
-
-            /*  left: 758px;*/
-            width: 404px;
-            height: 118px;
-            /* UI Properties */
-            text-align: center;
-            font: normal normal 900 80px/120px Heebo;
-            letter-spacing: 0px;
-            color: #3A3A3A;
-            opacity: 2;
-            z-index: 2;
-            margin-left: 800px;
-            margin-bottom: 300px;
-            margin-top: 100;
-            padding: 30px;
-            margin: 0 auto;
-            font-size: 4rem;
-            line-height: 1.0;
-        }
-
-        .thelorem {
-            z-index: 2;
-            text-align: center;
-            margin-left: 200px;
-            opacity: 1;
-            font-size: 2.5rem;
-            margin: 0 auto;
-            font: normal normal normal 20px/29px Heebo;
-
-        }
-
-        .langs {
-            left: 0px;
-            width: 100;
-            height: 130px;
-            /* UI Properties */
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            box-shadow: 3px 3px 6px #00000029;
-            opacity: 1;
-        }
-
-        .asidelangs {
-            display: flex;
-            margin: 0 auto;
-            justify-content: center;
-        }
-
-        .html {
-            left: 300px;
-            width: 100px;
-            height: 100px;
-            opacity: 1;
-            display: block;
-        }
-
-
-        .css {
-            left: 422px;
-            width: 100px;
-            height: 100px;
-            opacity: 1;
-            display: block;
-        }
-
-        .aboutme {
-            left: 0px;
-            width: 100;
-            height: 715px;
-            /* UI Properties */
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            opacity: 1;
-        }
-
-        .profilecenter {
-            top: 771px;
-            left: 894px;
-            width: 250spx;
-            height: 250px;
-            background: transparent url('./images/AnasNatour.png') 0% 0% no-repeat padding-box;
-            border-radius: 145px;
-            opacity: 1;
-            margin: 0 auto;
-
-        }
-
-        .headertwo {
-            width: 250px;
-            height: 52px;
-            /* UI Properties */
-            text-align: center;
-            font: normal normal 900 80px/118px Heebo;
-            letter-spacing: 0px;
-            color: #3A3A3A;
-            opacity: 1;
-            margin: 0 auto;
-            font-size: 3rem;
-            line-height: 1.3;
-        }
-
-        .loremhebrew {
-            top: 999px;
-            left: 561px;
-            width: 798px;
-            height: 232px;
-            /* UI Properties */
-            text-align: center;
-            font: normal normal normal 20px/29px Heebo;
-            font-size: 1.5rem;
-            letter-spacing: 0px;
-            color: #3A3A3A;
-            opacity: 1;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-
-        .aside {
-            width: 100;
-            height: 100px;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-
-        .cvbtn {
-            width: 400px;
-            height: 41px;
-            border: 1px solid #000;
-            background: #1AE0EC 0% 0% no-repeat padding-box;
-            border-radius: 25px;
-            opacity: 1;
-            margin: 0 auto;
-            font-size: 2rem;
-            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-        }
-
-        .cvbtn:hover {
-            box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.5);
-
-            .cvbtn:active {
-                box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.5);
-                background-color: #a3fe48;
-            }
-        }
-
-        .nothing {
-            background-color: #F6F6F6;
-            align-items: center;
-            text-align: center;
-            display: block;
-        }
-
-        .mywork {
-            left: 0px;
-            width: 1500px;
-            height: 1200px;
-            background-color: #F6F6F6;
-            opacity: 1;
-            /* Dont let cards expand too much on screen */
-            margin: 0 auto;
-            display: grid;
-            gap: 10px;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: auto;
-            justify-content: center;
-        }
-
-        .avodotnev {
-            padding-top: 30px;
-            width: 234px;
-            height: 53px;
-            align-items: center;
-            text-align: center;
-            font: normal normal 900 36px/53px Heebo;
-            letter-spacing: 0px;
-            color: #3A3A3A;
-            opacity: 1;
-            margin: 0 auto;
-
-        }
-
-        .avodotlorem {
-            text-align: center;
-            font: normal normal normal 20px/29px Heebo;
-            letter-spacing: 0px;
-            color: #3A3A3A;
-            opacity: 1;
-            font-size: 1.5rem;
-        }
-
-
-
-        .pjbtn {
-            width: 200px;
-            height: 41px;
-            border: 1px solid #000;
-            background: #1AE0EC 0% 0% no-repeat padding-box;
-            border-radius: 25px;
-            opacity: 1;
-            margin: 0 auto;
-            font-size: 1.5rem;
-            font-family: heebo;
-            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-            display: block;
-            text-decoration: none;
-        }
-
-        .pjbtn:hover {
-            box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.5);
-
-        }
-
-        .pjbtn:active {
-            background-color: #a3fe48;
-        }
-
-
-        .page1 {
-            width: 405px;
-            height: 518px;
-            /* UI Properties */
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            box-shadow: 3px 3px 15px #00000029;
-            border-radius: 10px;
-            opacity: 1;
-        }
-
-        .page2 {
-            width: 405px;
-            height: 518px;
-            /* UI Properties */
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            box-shadow: 3px 3px 15px #00000029;
-            border-radius: 10px;
-            opacity: 1;
-        }
-
-        .page3 {
-            width: 405px;
-            height: 518px;
-            /* UI Properties */
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            box-shadow: 3px 3px 15px #00000029;
-            border-radius: 10px;
-            opacity: 1;
-            overflow: hidden;
-        }
-
-        .page3pic {
-            width: 405px;
-            height: 223px;
-            border-radius: 5px;
-            opacity: 1;
-            margin: 0 auto;
-            border: 1px solid #d6d6d6;
-
-        }
-
-        .page4 {
-            width: 405px;
-            height: 518px;
-            /* UI Properties */
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            box-shadow: 3px 3px 15px #00000029;
-            border-radius: 10px;
-            opacity: 1;
-        }
-
-        .page5 {
-            width: 405px;
-            height: 518px;
-            /* UI Properties */
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            box-shadow: 3px 3px 15px #00000029;
-            border-radius: 10px;
-            opacity: 1;
-        }
-
-        .page6 {
-            width: 405px;
-            height: 518px;
-            /* UI Properties */
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            box-shadow: 3px 3px 15px #00000029;
-            border-radius: 10px;
-            opacity: 1;
-        }
-
-        .contactdiv {
-            height: 959px;
-            /* UI Properties */
-            background: #3A3A3A 0% 0% no-repeat padding-box;
-            opacity: 1;
-            display: flex;
-
-        }
-
-
-
-        .emailphoto {
-            display: block;
-            padding-left: 77px;
-            width: 1500px;
-
-        }
-
-        .contact-form-container {
-            background: #3A3A3A 0% 0% no-repeat padding-box;
-            /* Dark background color */
-            display: flex;
-            margin: auto;
-            align-items: center;
-            width: 549px;
-            height: 646px;
-            opacity: 1;
-
-        }
-
-        .contact-form {
-            background: #3A3A3A 0% 0% no-repeat padding-box;
-            /* Slightly lighter background color for the form */
-            padding: 20px;
-            border-radius: 8px;
-            /* Adjust the width as needed */
-            color: #fff;
-            width: 549px;
-            height: 646px;
-            opacity: 1;
-            direction: rtl;
-
-        }
-
-        .contact-form h2 {
-            text-align: center;
-            direction: rtl;
-
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 4px;
-            box-sizing: border-box;
-            direction: rtl;
-            border: none;
-            border-bottom: 5px solid #1AE0EC;
-
-        }
-
-        .contact-form input[type="submit"] {
-            /* Button background color */
-            border: none;
-            cursor: pointer;
-            padding: 15px;
-            margin-top: 20px;
-            width: 100%;
-            direction: rtl;
-            width: 166px;
-            height: 50px;
-            background: #1AE0EC 0% 0% no-repeat padding-box;
-            border-radius: 25px;
-            opacity: 1;
-            text-align: center;
-            font: normal normal bold 22px/30px Heebo;
-            letter-spacing: 0.33px;
-            color: #2C2C2C;
-            opacity: 1;
-
-        }
-
-        .contact-form input[type="submit"]:hover {
-            background-color: #0097a7;
-            /* Button hover color */
-        }
-
-        .label {
-            text-align: right;
-            font: normal normal bold 16px/24px Heebo;
-            letter-spacing: 0px;
-            color: #FFFFFF;
-            opacity: 1;
-            direction: rtl;
-        }
-
-        .bluefooter {
-            left: 0.5px;
-            height: 200px;
-            background: #1AE0EC 0% 0% no-repeat padding-box;
-            opacity: 1;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-
-        }
-
-        .bfitems {
-            display: block;
-            justify-content: center;
-            padding-top: 50px;
-            width: 300px;
-            height: 200px;
-            text-align: center;
-            font: normal normal normal 14px/21px Heebo;
-            letter-spacing: 0px;
-            color: #2C2C2C;
-            font-size: 1.5rem;
-        }
-
-        .footerimg {
-            width: 50px;
-            height: 60px;
-        }
-
-        .blackfooter {
-            left: 0.5px;
-            height: 51px;
-            background: #000000 0% 0% no-repeat padding-box;
-            opacity: 1;
-            border: none;
-            border-bottom: 6px solid #1AE0EC;
-            display: flex;
-
-        }
-
-        .myname {
-            font: normal normal 300 20px/29px Heebo;
-            letter-spacing: 0px;
-            color: #1AE0EC;
-            opacity: 1;
-            text-align: left;
-            width: 1500px;
-        }
-
-        .copyright {
-            font: normal normal 300 20px/29px Heebo;
-            letter-spacing: 0px;
-            color: #1AE0EC;
-            opacity: 1;
-            text-align: right;
-            width: 900px;
-        }
-    </style>
+    <link rel="stylesheet" href="portfolioStyle.css">
 </head>
 
 <body>
-    <div class="thediv">
+    <div class="body">
 
-        <header id="header">
+        <div class=homebtndiv>
+            <a href="#" class="homebutton"></a>
+            <div class=homebtndiv1>
+                <a href="#" class="homebutton1"></a>
+            </div>
+        </div>
+            <header id="header">
 
-            <img src="images/AnasNatour.png" alt="" class="profimg">
-            <img src="images/AnasNatourLogo.png" alt="" class="anasNatourLogo">
+                <img src="images/AnasNatour.png" alt="" class="profimg">
+                <a href="portfolioProject.html" class="logo"></a>
 
-            <nav class="navbar">
-                <ul>
-                    <li><a href="" class="contact">צור קשר</a></li>
-                    <li><a href="" class="services">שירותים</a></li>
-                    <li><a href="" class="about">אודות</a></li>
-                    <li><a href="" class="rashi">ראשי</a></li>
-                </ul>
-            </nav>
+                <label for="menuToggle" id="hamburger">&#9776;</label>
+                <input type="checkbox" id="menuToggle">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="contactinfo.html" class="contact">צור קשר</a></li>
+                        <li><a href="myservices.html" class="services">שירותים</a></li>
+                        <li><a href="aboutme.html" class="about">אודות</a></li>
+                        <li><a href="portfolioProject.html" class="rashi">ראשי</a></li>
+                    </ul>
+                </nav>
 
-        </header>
+
+            </header>
+        </div>
         <div class="theme">
 
             <br>
             <h1 class="tikAvodot">
                 תיק עבודות
             </h1>
-            <p class="thelorem">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית <br>לורם איפסום דולור סיט אמט, סחטיר
-                בלובק. תצטנפל בלינדו
-                למרקל אס
-                לכימפו, דול, צוט ומעיוט </p>
+            <p class="thelorem">שלום לכולם , אני אנס נאטור וזה האתר הראשון שלי , זה הדף הראשי של האתר שלי <br>
+                הדף הראשון הוא כמו אתר גלילה שיש בו אלמנטים שמובילים אותך לדפים אחרים </p>
         </div>
         <div class="langs">
             <aside class="asidelangs">
@@ -683,156 +54,219 @@
                 <img src="images/css-img.png" alt="" class="css">
                 <img src="images/bootstrap-img.png" alt="" class="bootstrap">
                 <img src="images/sass-img.png" alt="" class="sass">
-                <img src="images/js-img.png" alt="" class="js">
+                <!--
+                את האייקונים האלה אני בכוונה משאיר בתוך הערה . עם ההתקדמות שלי בקורס אני אוציא אותם מההערה בהתאם 
+                 <img src="images/js-img.png" alt="" class="js">
                 <img src="images/oop-img.png" alt="" class="oop">
                 <img src="images/es6-img.png" alt="" class="es6-img">
                 <img src="images/typescript-img.png" alt="" class="typescript">
                 <img src="images/api-img.png" alt="" class="api">
                 <img src="images/react-img.png" alt="" class="react">
-                <img src="images/node-img.png" alt="" class="node">
+                <img src="images/node-img.png" alt="" class="node"> -->
             </aside>
         </div>
-        <br><br>
-        <div class="aboutme">
+        <div class="aboutmediv">
             <br><br>
-            <img src="images/AnasNatour.png" alt="" class="profilecenter">
-            <h2 class="headertwo">קצת עליי</h2>
-            <br><br>
-            <p class="loremhebrew">שלום , אני אנס נאטור <br>
-                נולדתי בתאריך 13.11.1991 בישראל<br>
-                זה הוא האתר הראשון שאני בונה ומפתח בכוחות עצמי ובזכות הקורס שלמדתי מכללת האקריו <br>
-                אני באתי מתחומים אחרים אך מעולם לא היה לי רקע בתחום התכנות ץ<br>
-            </p>
-            <br><br>
-            <br>
+            <div class="aboutme">
+                <br><br>
+                <div class="imgcontainer">
+                    <img src="images/AnasNatour.png" alt="" class="profilecenter">
+                </div>
+                <div class="aboutme2">
+                    <h2 class="headertwo">קצת עליי</h2>
+                    <br><br>
+                    <p class="loremhebrew">שלום , אני אנס נאטור <br>
+                        נולדתי בתאריך 13.11.1991 בישראל<br>
+                        זה הוא האתר הראשון שאני בונה ומפתח בכוחות עצמי ובזכות הקורס שלמדתי במכללת האקריו <br>
+                  אני באתי מתחומים אחרים אך מעולם לא היה לי רקע בתחום התכנות <br>
 
-            <aside class="aside">
+                    </p>
 
-                <button class="cvbtn">להורדת קורות חיים</button>
+                    </p>
+                </div>
+                <span class="mysocial">
+                    <a href="https://www.facebook.com/sweet.natour?locale=he_IL" class="myfbpage" target="_blank"></a>
 
-            </aside>
+                    <a href="https://www.instagram.com/troublemaker_na" class="myigpage" target="_blank"></a>
+                    <a href="https://discord.gg/C2ysjDYV" class="myDiscord" target="_blank"></a>
+
+                </span>
+                <br><br>
+
+
+                <aside class="aside">
+
+                    <button class="cvbtn">להורדת קורות חיים</button>
+
+                </aside>
+            </div>
         </div>
         <br> <br><br><br><br>
         <div class="nothing">
             <br>
             <h2 class="avodotnev">עבודות נבחרות</h2>
             <br><br>
-            <p class="avodotlorem">ורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה,
-                בתחום הדפוס <br>, ההדפסה והפרסום. למשל:
-                לורםלורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות .</p>
+            <p class="avodotlorem">שלום לכולם . זה האזור של השירותים והעבודות שלי . וזה כולל דפים שמובילים
+                לדפי הנחיתה שבניתי לפי הסקיצה שקיבלתי מהמרצה </p>
             <br>
             <div class="mywork">
                 <div class="page1">
-                    <aside class="page3pic">
+                  <div class="page3pic"> 
                         <img src="images/pathLanding.jpeg" alt="" class="page3pic">
-                    </aside>
-                    <h3 style="font-size: 2rem; font-family: heebo; text-align: center;">כאן ועכשיו</h3>
+                    </div>
+                    <h3 style="font-size: 2rem; font-family: heebo; text-align: center;">הפרוייקט הראשון</h3>
                     <p style="font-size: 1.2rem; font-family: heebo;
-                                    text-align: center;">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית סחטיר
-                        בלובק. תצטנפל בלינדו
-                        למרקל אס לכימפו
+                                                    text-align: center;">היי , זה הפרוייקט הראשון מסוג דף נחיתה ,
+                        בלחיצה על הכפתור למטה
+                        אתה תעבור לדף שמוביל אותך פרוייקט
                     </p>
-                    <a href="PathProjectPage.html" target="_blank" class="pjbtn">לעמוד הפרוייקט</a>
-                    <aside style="margin: 0 auto; display: flex;">
+                    <a href="PathProjectPage.html" target="_blank" class="pjbtn1">לעמוד הפרוייקט</a>
+                    <div style="margin: 0 auto; display: flex; margin-top: 5px;">
                         <img src="images/html-img.png" alt="" style="width: 26px;height: 26px;">
                         <img src="images/css-img.png" alt="" style="width: 26px;height: 26px;">
                         <img src="images/bootstrap-img.png" alt=" " style="width: 26px;height: 26px;">
                         <img src="images/sass-img.png" alt="" style="width: 26px;height: 26px;">
-                    </aside>
+                    </div>
                 </div>
+                <br class="br"><br class="br">
                 <div class="page2">
-                    <aside class="page3pic">
+                    <div class="page3pic">
                         <img src="images/landingCoffeeSmall.jpeg" alt="" class="page3pic">
-                    </aside>
-                    <h3 style="font-size: 2rem; font-family: heebo; text-align: center;">כאן ועכשיו</h3>
+                    </div>
+                    <h3 style="font-size: 2rem; font-family: heebo; text-align: center;">הפרוייקט השני</h3>
                     <p style="font-size: 1.2rem; font-family: heebo;
-                                                    text-align: center;">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג
-                        אלית סחטיר בלובק. תצטנפל בלינדו
-                        למרקל אס לכימפו
+                                                    text-align: center;">היי , זה הפרוייקט השני מסוג דף נחיתה ,
+                        בלחיצה על הכפתור למטה
+                        אתה תעבור לדף שמוביל אותך פרוייקט
                     </p>
-                    <a href="CoffeeProjectPage.html" target="_blank" class="pjbtn">לעמוד הפרוייקט</a>
-                    <aside style="margin: 0 auto; display: flex;">
+
+                    <a href="./CoffeeProjectPage.html" target="_blank" class="pjbtn1">לעמוד
+                        הפרוייקט</a>
+                    <div style="margin: 0 auto; display: flex; margin-top: 5px;">
                         <img src="images/html-img.png" alt="" style="width: 26px;height: 26px;">
                         <img src="images/css-img.png" alt="" style="width: 26px;height: 26px;">
                         <img src="images/bootstrap-img.png" alt=" " style="width: 26px;height: 26px;">
                         <img src="images/sass-img.png" alt="" style="width: 26px;height: 26px;">
-                    </aside>
+                    </div>
                 </div>
+                <br class="br"><br class="br">
                 <div class="page3">
-                    <aside class="page3pic">
+                    <div class="page3pic">
                         <img src="images/here-nowSmall.jpeg" alt="" class="page3pic">
-                    </aside>
-                    <h3 style="font-size: 2rem; font-family: heebo; text-align: center;">כאן ועכשיו</h3>
+                    </div>
+                    <h3 style="font-size: 2rem; font-family: heebo; text-align: center;">הפרוייקט השלישי</h3>
                     <p style="font-size: 1.2rem; font-family: heebo;
-                    text-align: center;">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית סחטיר בלובק. תצטנפל בלינדו
-                        למרקל אס לכימפו
+                                                                    text-align: center;">היי , זה הפרוייקט השלישי מסוג
+                        דף נחיתה ,
+                        בלחיצה על הכפתור למטה
+                        אתה תעבור לדף שמוביל אותך פרוייקט
                     </p>
-                    <a href="gardientpageproject.html" target="_blank" class="pjbtn">לעמוד הפרוייקט</a>
+                    <a href="gardientpageproject.html" target="_blank" class="pjbtn1">לעמוד הפרוייקט</a>
 
 
-                    <aside style="margin: 0 auto; display: flex;">
+                    <div style="margin: 0 auto; display: flex;margin-top: 5px;">
                         <img src="images/html-img.png" alt="" style="width: 26px;height: 26px;">
                         <img src="images/css-img.png" alt="" style="width: 26px;height: 26px;">
                         <img src="images/bootstrap-img.png" alt=" " style="width: 26px;height: 26px;">
                         <img src="images/sass-img.png" alt="" style="width: 26px;height: 26px;">
-                    </aside>
-
+                    </div>
+                    <br class="br"><br class="br">
 
                 </div>
                 <div class="page4">
-                    <aside class="page3pic">
+                    <div class="page3pic">
                         <img src="images/projpics.jpeg" alt="" class="page3pic">
-                    </aside>
-                    <h3 style="font-size: 2rem; font-family: heebo; text-align: center;">כאן ועכשיו</h3>
+                    </div>
+                    <h3 style="font-size: 2rem; font-family: heebo; text-align: center;">הפרוייקט הרביעי</h3>
                     <p style="font-size: 1.2rem; font-family: heebo;
-                                                        text-align: center;">לורם איפסום דולור סיט אמט, קונסקטורר
-                        אדיפיסינג אלית סחטיר
-                        בלובק. תצטנפל בלינדו
-                        למרקל אס לכימפו
+                                                                        text-align: center;">היי , זה הפרוייקט הרביעי
+                        מסוג דף נחיתה ,
+                        בלחיצה על הכפתור למטה
+                        אתה תעבור לדף שמוביל אותך פרוייקט
                     </p>
-                    <a href="./projpicspafge.html" target="_blank" class="pjbtn">לעמוד הפרוייקט</a>
-                    <aside style="margin: 0 auto; display: flex;">
+                    <a href="./projpicspafge.html" target="_blank" class="pjbtn1">לעמוד הפרוייקט</a>
+                    <div style="margin: 0 auto; display: flex; margin-top: 5px;">
                         <img src="images/html-img.png" alt="" style="width: 26px;height: 26px;">
                         <img src="images/css-img.png" alt="" style="width: 26px;height: 26px;">
                         <img src="images/bootstrap-img.png" alt=" " style="width: 26px;height: 26px;">
                         <img src="images/sass-img.png" alt="" style="width: 26px;height: 26px;">
-                    </aside>
+                    </div>
                 </div>
-                <div class="page5"></div>
-                <div class="page6"></div>
+                <br class="br"><br class="br">
+                <div class="page5">
+                    <div class="page3pic">
+                        <img src="images/projectYellow.jpeg" alt="" class="page3pic">
+                    </div>
+                    <h3 style="font-size: 2rem; font-family: heebo; text-align: center;">הפרוייקט החמישי</h3>
+                    <p style="font-size: 1.2rem; font-family: heebo;
+                                                                    text-align: center;">היי , זה הפרוייקט החמישי מסוג
+                        דף נחיתה ,
+                        בלחיצה על הכפתור למטה
+                        אתה תעבור לדף שמוביל אותך פרוייקט
+                    </p>
+                    <a href="./projectYellowPage.html" target="_blank" class="pjbtn1">לעמוד הפרוייקט</a>
+                    <div style="margin: 0 auto; display: flex;margin-top: 5px;">
+                        <img src="images/html-img.png" alt="" style="width: 26px;height: 26px;">
+                        <img src="images/css-img.png" alt="" style="width: 26px;height: 26px;">
+                        <img src="images/bootstrap-img.png" alt=" " style="width: 26px;height: 26px;">
+                        <img src="images/sass-img.png" alt="" style="width: 26px;height: 26px;">
+                    </div>
+                </div>
+                <br class="br"><br class="br">
+                <div class="page6">
+                    <div class="page3pic">
+                        <img src="images/leadProject.jpeg" alt="" class="page3pic">
+                    </div>
+                    <h3 style="font-size: 2rem; font-family: heebo; text-align: center;">הפרוייקט השישי</h3>
+                    <p style="font-size: 1.2rem; font-family: heebo;
+                                                                    text-align: center;">היי , זה הפרוייקט השישי מסוג
+                        דף נחיתה ,
+                        בלחיצה על הכפתור למטה
+                        אתה תעבור לדף שמוביל אותך פרוייקט
+                    </p>
+                    <a href="./LeadProjectPage.html" target="_blank" class="pjbtn1">לעמוד הפרוייקט</a>
+                    <div style="margin: 0 auto; display: flex;margin-top: 5px;">
+                        <img src="images/html-img.png" alt="" style="width: 26px;height: 26px;">
+                        <img src="images/css-img.png" alt="" style="width: 26px;height: 26px;">
+                        <img src="images/bootstrap-img.png" alt=" " style="width: 26px;height: 26px;">
+                        <img src="images/sass-img.png" alt="" style="width: 26px;height: 26px;">
+                    </div>
+                </div>
             </div>
-
         </div>
-        <br><br><br>
+
+
+
         <div class="contactdiv">
-            <aside class="emailphoto">
+            <div class="emailphoto">
                 <img src="images/emailphoto.png" alt="">
-            </aside>
+            </div>
 
             <div class="contact-form-container">
                 <div class="contact-form">
-                    <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">צור קשר</h2>
+                    <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">צור
+                        קשר
+                    </h2>
                     <form>
                         <label for="name" class="label">שם מלא</label>
                         <br>
                         <input type="text" name="fullname" placeholder="שם מלא" required>
-                        <label for="name" class="label">דוא"ל</label>
+                        <label for="email" class="label">דוא"ל</label>
                         <br>
                         <input type="email" name="email" placeholder="דוא”ל" required>
                         <label for="name" class="label">טלפון</label>
                         <br>
                         <input type="tel" name="phone" placeholder="טלפון" required>
-                        <label for="name" class="label">תוכן ההודעה</label>
+                        <label for="textarea" class="label">תוכן ההודעה</label>
                         <br>
                         <textarea name="message" placeholder="תוכן ההודעה" rows="4" required></textarea>
                         <input type="submit" value="שליחה">
                     </form>
                 </div>
-
             </div>
         </div>
 
-        <aside class="bluefooter">
+        <div class="bluefooter">
             <aside class="bfitems">
                 <img src="./images/location-img.png" alt="" class="footerimg">
                 <br><br>
@@ -864,13 +298,15 @@
                 <p>Anas Essam Natour </p>
             </aside>
 
-        </aside>
+        </div>
         <div class="blackfooter">
             <p class="myname"> Anas Natour</p>
             <p class="copyright">כל הזכויות שמורות</p>
-
-            </aside>
         </div>
+
+    </div>
+    </div>
+    </div>
 
 </body>
 
